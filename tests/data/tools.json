@@ -1,0 +1,19 @@
+{
+    "table": {
+        "name": "tools"
+    },
+    "records": [
+        {
+            "id": 1,
+            "name": "screw driver",
+            "added": "2020-03-29",
+            "last_seen": "2020-04-12 05:22:33"
+        },
+        {
+            "id": 2,
+            "name": "hammer",
+            "added": "2020-04-19",
+            "last_seen": "2020-05-07 23:30:05"
+        }
+    ]
+}
