@@ -7,7 +7,7 @@ from setuptools import setup
 setup(
     name='Flask-SQLAFixtures',
     version='1.0',
-    url='',
+    url='https://github.com/jwj2002/Flask-SQLAFixtures',
     license='MIT',
     author='Jason Job',
     author_email='jasonwadejob@gmail.com',
