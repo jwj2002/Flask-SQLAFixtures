@@ -165,6 +165,11 @@ class Test_SQLAFixtures_Commands:
         except OSError:
             pass
 
+    def test_check_sqlafixtures_config(self):
+
+        runner = CliRunner()
+        result = runner.invoke(commands.check_sqlafixtures_config)
+
     def test_init_sqlafixtures_not_initialized(self):
         """Test init_sqlafixtures when not initialized."""
 

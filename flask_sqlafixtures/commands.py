@@ -21,7 +21,11 @@ def check_sqlafixtures_config():
         'SQLAFIXTURES_MODE',
         'SQLAFIXTURES_FILENAME'
     ]:
-        click.echo('{}: {}'.format(config, current_app.config[config]))
+        try:
+            click.echo('{}: {}'.format(config, current_app.config[config]))
+        except KeyError:
+            click.echo(
+                '{}: is not setup in the application configuration.'.format(config))
     click.echo('')
     click.echo('Actual configuration:')
     for attr in (
